@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>unitXX</groupId>
-    <artifactId>unitXX</artifactId>
+    <groupId>peerevals</groupId>
+    <artifactId>peerevals</artifactId>
     <version>1</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -10,6 +10,11 @@
         <maven.compiler.target>19</maven.compiler.target>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.8</version>
+        </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -50,7 +55,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>unitXX.HelloFX</mainClass>
+                            <mainClass>peerevals.HelloFX</mainClass>
                         </configuration>
                     </execution>
                 </executions>
